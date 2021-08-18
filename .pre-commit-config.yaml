@@ -1,0 +1,11 @@
+repos:
+- repo: https://github.com/dfm/black_nbconvert
+  rev: stable
+  hooks:
+  - id: black_nbconvert
+
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1  # Use the ref you want to point at
+    hooks:
+    -   id: requirements-txt-fixer
+    -   id: check-case-conflict
